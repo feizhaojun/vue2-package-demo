@@ -1,3 +1,9 @@
+<!--
+ * @Author: Mukti
+ * @Date: 2021-12-21 13:34:50
+ * @LastEditTime: 2021-12-21 14:57:07
+ * @LastEditors: Mukti
+-->
 <template>
   <div class="hello">
     <h1>{{ msg }}</h1>
@@ -36,6 +42,9 @@ import { Component, Prop, Vue } from 'vue-property-decorator';
 @Component
 export default class HelloWorld extends Vue {
   @Prop() private msg!: string;
+  constructor() {
+    super()
+  }
 }
 </script>
 
